@@ -1,2 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters />
+<parameters>
+  <parameter name="FilmContextConnectionString-Web.config Connection String" description="FilmContextConnectionString Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:ateasql.database.windows.net,1433;Initial Catalog=atea;Persist Security Info=False;User ID=ateaadmin;Password=atea@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\GİT\\atea\\AteaPackageManager\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FilmContextConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

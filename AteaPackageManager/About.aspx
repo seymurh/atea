@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="AteaPackageManager.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
+    <h2><%: Film?.Name??"No Film" %>.</h2>
     <h3>Your application description page.</h3>
     <p>Use this area to provide additional information.</p>
 </asp:Content>
