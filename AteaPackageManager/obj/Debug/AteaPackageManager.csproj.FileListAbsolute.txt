@@ -57,3 +57,6 @@ D:\GİT\atea\AteaPackageManager\bin\Microsoft.Owin.Security.OAuth.xml
 D:\GİT\atea\AteaPackageManager\bin\Microsoft.Owin.Host.SystemWeb.dll
 D:\GİT\atea\AteaPackageManager\bin\Microsoft.Owin.Host.SystemWeb.xml
 D:\GİT\atea\AteaPackageManager\bin\System.Web.Providers.dll
+D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.InitialCreate.resources
+D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.csproj.GenerateResource.Cache
+D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.atea.resources

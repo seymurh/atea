@@ -6,6 +6,9 @@
         <div class="col-md-10" >
             <h2>Films</h2>
             <asp:GridView CssClass="table table-stripped table-hover" ID="GridViewFilms" runat="server">
+                <Columns>
+                    <asp:HyperLinkField Visible="true" Text="Details" DataNavigateUrlFormatString="~/About.aspx?id={0}" DataNavigateUrlFields="Id" />
+                </Columns>
             </asp:GridView>
         </div>
     </div>

@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -12,9 +11,6 @@ namespace AteaPackageManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            FilmContext context = new FilmContext();
-            GridViewFilms.DataSource = context.Films.ToList();
-            GridViewFilms.DataBind();
         }
     }
 }

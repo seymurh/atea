@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
 
 namespace AteaPackageManager.Entities
 {
-    public class FilmContext:DbContext
+    public class FilmContext : DbContext
     {
         public FilmContext() : base("name=FilmContextConnectionString")
         {
@@ -14,5 +10,9 @@ namespace AteaPackageManager.Entities
         }
 
         public DbSet<Film> Films { get; set; }
+
+        public DbSet<Producer> Producers { get; set; }
+
+        public DbSet<Screenshot> Screenshots { get; set; }
     }
 }
