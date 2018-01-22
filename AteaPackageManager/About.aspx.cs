@@ -18,7 +18,7 @@ namespace AteaPackageManager
             if (!string.IsNullOrEmpty(id))
             {
                 int filmId = Convert.ToInt32(id);
-                Film = new FilmContext().Films.FirstOrDefault(f => f.Id == filmId);
+                Film = new FilmContext().Films.Find(filmId);
             }
             
         }

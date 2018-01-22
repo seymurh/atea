@@ -94,3 +94,14 @@ D:\GİT\atea\AteaPackageManager\bin\Microsoft.Owin.Host.SystemWeb.xml
 D:\GİT\atea\AteaPackageManager\bin\Microsoft.Owin.Security.xml
 D:\GİT\atea\AteaPackageManager\bin\Microsoft.Owin.Security.Cookies.xml
 D:\GİT\atea\AteaPackageManager\bin\Microsoft.Owin.Security.OAuth.xml
+D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.Migrations.InitialCreate.resources
+D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.Migrations.atea.resources
+D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.csproj.GenerateResource.Cache
+D:\GİT\atea\AteaPackageManager\bin\Ioc.Modules.dll
+D:\GİT\atea\AteaPackageManager\bin\Ioc.Modules.Ninject.dll
+D:\GİT\atea\AteaPackageManager\bin\Ninject.dll
+D:\GİT\atea\AteaPackageManager\bin\UrlRewrite.dll
+D:\GİT\atea\AteaPackageManager\bin\Ninject.xml
+D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.Migrations.mig.resources
+D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.Migrations.mig1.resources
+D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.Migrations.mm.resources

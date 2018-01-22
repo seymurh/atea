@@ -54,6 +54,12 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Ioc.Modules, Version=1.1.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ioc.Modules.1.1.4\lib\net45\Ioc.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="Ioc.Modules.Ninject, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ioc.Modules.Ninject.1.1.3\lib\net45\Ioc.Modules.Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -81,6 +87,9 @@
     </Reference>
     <Reference Include="Microsoft.Owin.Security.OAuth, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
@@ -119,6 +128,9 @@
     </Reference>
     <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="UrlRewrite, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UrlRewrite.Net.1.2.7\lib\net45\UrlRewrite.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -203,6 +215,7 @@
     <Content Include="Account\Web.config" />
     <None Include="Properties\PublishProfiles\AteaPackageManager - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Pages\NewFilm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -384,7 +397,26 @@
     <Compile Include="Migrations\201801182256296_atea.Designer.cs">
       <DependentUpon>201801182256296_atea.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801220355462_mig.cs" />
+    <Compile Include="Migrations\201801220355462_mig.Designer.cs">
+      <DependentUpon>201801220355462_mig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801220409217_mig 1.cs" />
+    <Compile Include="Migrations\201801220409217_mig 1.Designer.cs">
+      <DependentUpon>201801220409217_mig 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801222252501_mm.cs" />
+    <Compile Include="Migrations\201801222252501_mm.Designer.cs">
+      <DependentUpon>201801222252501_mm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Pages\NewFilm.aspx.cs">
+      <DependentUpon>NewFilm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NewFilm.aspx.designer.cs">
+      <DependentUpon>NewFilm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FilmService.cs" />
     <Compile Include="Site.Master.cs">
@@ -432,6 +464,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801182256296_atea.resx">
       <DependentUpon>201801182256296_atea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801220355462_mig.resx">
+      <DependentUpon>201801220355462_mig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801220409217_mig 1.resx">
+      <DependentUpon>201801220409217_mig 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801222252501_mm.resx">
+      <DependentUpon>201801222252501_mm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
