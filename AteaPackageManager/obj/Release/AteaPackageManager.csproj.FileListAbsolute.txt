@@ -72,7 +72,6 @@ D:\GİT\atea\AteaPackageManager\bin\Microsoft.AI.DependencyCollector.xml
 D:\GİT\atea\AteaPackageManager\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\GİT\atea\AteaPackageManager\bin\Microsoft.AI.WindowsServer.xml
 D:\GİT\atea\AteaPackageManager\bin\Microsoft.AI.Web.xml
-D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.csprojResolveAssemblyReference.cache
 D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.csproj.CoreCompileInputs.cache
 D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.dll
 D:\GİT\atea\AteaPackageManager\obj\Release\AteaPackageManager.pdb

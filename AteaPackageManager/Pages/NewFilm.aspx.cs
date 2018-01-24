@@ -12,12 +12,25 @@ namespace AteaPackageManager.Pages
 {
     public partial class NewFilm : System.Web.UI.Page
     {
-        public Film Film { get; set; }
+        public Film Film
+        {
+            get { return (Film)Session["film"]; }
+            set { Session["film"] = value; }
+        }
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var id = Request.QueryString["Id"];
-            Film = GetFilm(id);
+            if (!IsPostBack)
+            {
+                var id = Request.QueryString["id"];
+                Film = GetFilm(id);
+                txtName.Text = Film.Name;
+                category.Text = Film.Category;
+                if (Film?.ReleaseDate != null)
+                    releaseDate.SelectedDate = Film.ReleaseDate.Value;
+                if (Film?.ProducerId != null)
+                    producer.SelectedValue = Film.ProducerId.ToString();
+            }
         }
 
         public Film GetFilm(string id)

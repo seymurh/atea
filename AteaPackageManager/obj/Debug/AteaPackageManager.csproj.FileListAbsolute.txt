@@ -60,3 +60,11 @@ D:\GİT\atea\AteaPackageManager\bin\System.Web.Providers.dll
 D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.InitialCreate.resources
 D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.csproj.GenerateResource.Cache
 D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.atea.resources
+D:\GİT\atea\AteaPackageManager\bin\Ioc.Modules.dll
+D:\GİT\atea\AteaPackageManager\bin\Ioc.Modules.Ninject.dll
+D:\GİT\atea\AteaPackageManager\bin\Ninject.dll
+D:\GİT\atea\AteaPackageManager\bin\UrlRewrite.dll
+D:\GİT\atea\AteaPackageManager\bin\Ninject.xml
+D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.mig.resources
+D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.mig1.resources
+D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.mm.resources
