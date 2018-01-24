@@ -9,6 +9,8 @@ namespace AteaPackageManager.Entities
 
         }
 
+        public DbSet<Log> Logs { get; set; }
+
         public DbSet<Film> Films { get; set; }
 
         public DbSet<Producer> Producers { get; set; }

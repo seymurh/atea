@@ -2,8 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="form-group">
-        <a runat="server" href="Pages/NewFilm.aspx" class="btn btn-success" >Add</a>
-        <asp:Button runat="server" CssClass="btn btn-danger" Text="Edit" OnClick="Unnamed_Click" />
+        <a runat="server" href="Pages/NewFilm.aspx" class="btn btn-success">Add</a>
+        <asp:Button runat="server" type="button" CssClass="btn btn-danger" Text="Edit" OnClick="Unnamed_Click" />
     </div>
     <div class="form-group">
         <label for="name">Name:</label>

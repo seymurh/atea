@@ -7,11 +7,15 @@ using System.Web;
 using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity;
+using AteaPackageManager.Services;
 
 namespace AteaPackageManager.Pages
 {
     public partial class NewFilm : System.Web.UI.Page
     {
+        private FilmService filmService { get; set; } = new FilmService();
+
         public Film Film
         {
             get { return (Film)Session["film"]; }
@@ -52,32 +56,7 @@ namespace AteaPackageManager.Pages
         public void InsertOrUpdateFilm(object sender, EventArgs e)
         {
             BindFilm();
-            using (FilmContext context = new FilmContext())
-            {
-                var contextFilm = context.Films.Find(Film.Id);
-                try
-                {
-                    if (contextFilm != null)
-                    {
-                        context.Entry(contextFilm).CurrentValues.SetValues(Film);
-                        context.SaveChanges();
-                    }
-                    else
-                    {
-                        context.Films.Add(Film);
-                        context.SaveChanges();
-                    }
-                }
-                catch (DbEntityValidationException ex)
-                {
-                    var errors = context.GetValidationErrors().SelectMany(er => er.ValidationErrors);
-                    foreach (var error in errors)
-                    {
-                        ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
-                    }
-                }
-            }
-
+            filmService.InsertOrUpdateFilm(Film, User.Identity, ModelState);
         }
 
         protected void BindFilm()

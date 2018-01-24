@@ -68,3 +68,4 @@ D:\GİT\atea\AteaPackageManager\bin\Ninject.xml
 D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.mig.resources
 D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.mig1.resources
 D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.mm.resources
+D:\GİT\atea\AteaPackageManager\obj\Debug\AteaPackageManager.Migrations.df.resources

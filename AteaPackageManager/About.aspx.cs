@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity;
 
 namespace AteaPackageManager
 {
@@ -14,18 +15,27 @@ namespace AteaPackageManager
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var id = Request.QueryString["id"];
-            if (!string.IsNullOrEmpty(id))
+            if (!IsPostBack)
             {
-                int filmId = Convert.ToInt32(id);
-                Film = new FilmContext().Films.Find(filmId);
+                var id = Request.QueryString["id"];
+                if (!string.IsNullOrEmpty(id))
+                {
+                    int filmId = Convert.ToInt32(id);
+                    using (var context = new FilmContext())
+                    {
+                        Film = context.Films.Find(filmId);
+                        context.Entry(Film).Reference(f => f.Producer).Load();
+                        context.Logs.Add(new Log { UserId = User.Identity.GetUserId(), Name = User.Identity.GetUserName(), Description = $"entered details of {Film.Id}" });
+                        context.SaveChanges();
+                    }
+                }
             }
-            
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)
         {
-            var url = $"Pages/NewFilm.aspx?id={Film.Id}";
+            var id = Request.QueryString["id"];
+            var url = $"Pages/NewFilm.aspx?id={id}";
             Response.Redirect(url);
         }
     }
